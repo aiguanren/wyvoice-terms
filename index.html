@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>语音工坊 · 用户协议</title>
+<style>
+    :root { color-scheme: light dark; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+        line-height: 1.75; color: #1d1d1f; background: #f5f5f7;
+        -webkit-text-size-adjust: 100%;
+    }
+    @media (prefers-color-scheme: dark) {
+        body { color: #e8e8ed; background: #1c1c1e; }
+        .card { background: #2c2c2e !important; }
+        a { color: #6cb6ff !important; }
+    }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 24px 20px 64px; }
+    header.app { text-align: center; padding: 36px 0 8px; }
+    header.app .icon {
+        width: 72px; height: 72px; margin: 0 auto 14px; border-radius: 18px;
+        background: linear-gradient(135deg, #ff7a59, #ff4d6d);
+        display: flex; align-items: center; justify-content: center; font-size: 34px;
+    }
+    header.app h1 { font-size: 24px; font-weight: 700; }
+    header.app .sub { font-size: 14px; opacity: .6; margin-top: 4px; }
+    .langs { display: flex; gap: 8px; justify-content: center; margin: 20px 0 8px; }
+    .langs a {
+        font-size: 13px; text-decoration: none; padding: 6px 14px; border-radius: 999px;
+        background: rgba(125,125,145,.12); color: inherit;
+    }
+    .langs a.on { background: #ff4d6d; color: #fff; }
+    .meta { text-align: center; font-size: 12px; opacity: .55; margin-bottom: 20px; }
+    section.card {
+        background: #fff; border-radius: 16px; padding: 26px 24px; margin-bottom: 16px;
+        box-shadow: 0 1px 3px rgba(0,0,0,.06);
+    }
+    section.card h2 { font-size: 18px; margin-bottom: 12px; }
+    section.card p, section.card li { font-size: 15px; }
+    section.card p { margin-bottom: 10px; }
+    section.card ul { padding-left: 20px; }
+    section.card li { margin-bottom: 6px; }
+    .divider { border: none; border-top: 1px solid rgba(125,125,145,.18); margin: 36px 0; }
+    .en { display: none; }
+    body.show-en .zh { display: none; }
+    body.show-en .en { display: block; }
+    footer { text-align: center; font-size: 12px; opacity: .5; margin-top: 28px; }
+    a { color: #d83a5b; }
+</style>
+</head>
+<body>
+<div class="wrap">
+    <header class="app">
+        <div class="icon">🎙️</div>
+        <h1>语音工坊</h1>
+        <div class="sub">AI 配音 · 声音克隆 · 语音转文字</div>
+    </header>
+    <div class="langs">
+        <a href="#" class="on" onclick="document.body.classList.remove('show-en');document.querySelectorAll('.langs a')[0].classList.add('on');document.querySelectorAll('.langs a')[1].classList.remove('on');return false;">简体中文</a>
+        <a href="#" onclick="document.body.classList.add('show-en');document.querySelectorAll('.langs a')[1].classList.add('on');document.querySelectorAll('.langs a')[0].classList.remove('on');return false;">English</a>
+    </div>
+    <div class="meta">用户协议 · 生效日期 2026-10-11</div>
+
+    <div class="zh">
+        <section class="card">
+            <h2>1. 服务说明</h2>
+            <p>语音工坊（下称"本 App"）提供 AI 语音合成、声音克隆、语音转文字等生成式 AI 功能。所有输出均由人工智能模型自动生成，可能存在不准确、不完整或与预期不符的内容。生成结果仅供辅助用途，用于正式发布、商业用途等重要场景前请您自行核对。</p>
+        </section>
+        <section class="card">
+            <h2>2. 合规使用</h2>
+            <p>您承诺仅在合法目的下使用本 App，并保证对输入的文本、音频等内容拥有合法权利。您不得利用本 App：</p>
+            <ul>
+                <li>生成或传播违法、侵权、欺诈、诽谤或骚扰性内容；</li>
+                <li>冒充他人或生成误导公众的深度伪造（Deepfake）内容；</li>
+                <li>侵犯任何第三方的知识产权、肖像权、声音权益或其他人身、财产权利。</li>
+            </ul>
+            <p>因您违反上述约定产生的一切责任由您自行承担，我们有权对违规账号采取限制或终止服务等措施。</p>
+        </section>
+        <section class="card">
+            <h2>3. 声音克隆授权</h2>
+            <p>使用声音克隆功能时，您须确保已获得被克隆声音本人（或其权利人）的有效同意与授权，且仅用于本人合法用途。克隆公众人物、他人声音用于冒充、带货、营销等场景，必须事先取得明确授权。我们不对您的克隆用途做逐案审查，因授权缺失引发的纠纷与责任由您承担。</p>
+        </section>
+        <section class="card">
+            <h2>4. 会员与字符额度</h2>
+            <ul>
+                <li>会员权益以<b>字符额度</b>为核心：订阅档位对应相应的每周期可用字符额度，额度随订阅周期到期自动清零、续期后重新发放；</li>
+                <li>额外购买的字符包为消耗型额度，加入同一额度池，按使用量扣减，不设有效期；</li>
+                <li>免费用户每天享有少量免费生成次数；</li>
+                <li>额度以本 App 内展示为准。同一 Apple 账户共享同一额度池，额度用尽后需等待周期发放、续费或购买字符包。</li>
+            </ul>
+        </section>
+        <section class="card">
+            <h2>5. 购买、自动续费与退款</h2>
+            <ul>
+                <li>所有付费项目均通过 Apple App Store 内购完成，价格、扣费与发票规则以 App Store 展示为准；</li>
+                <li>订阅为自动续期：在当前周期结束前 24 小时内自动扣费续订，您可随时在系统"设置 → Apple 账户 → 订阅"中管理或取消；</li>
+                <li>退款按 Apple 官方政策办理，请通过 App Store 的"报告问题"页面发起（reportaproblem.apple.com）。</li>
+            </ul>
+        </section>
+        <section class="card">
+            <h2>6. Apple 账户与权益恢复</h2>
+            <p>会员权益与购买时使用的 Apple 账户（旧称 Apple ID）绑定。更换设备、重新安装或更换 Apple 账户后，登录原 Apple 账户并在设置页点击"恢复购买"即可恢复权益。</p>
+            <p>会员权益仅限购买者本人使用。您不得将 Apple 账户、会员权益出租、出售、出借或以任何方式向公众共享以规避付费；同一额度的多人共享会导致额度迅速耗尽，且共享、买卖 Apple 账户本身违反 Apple 服务条款并可能导致账户被封禁。</p>
+        </section>
+        <section class="card">
+            <h2>7. 免责声明</h2>
+            <ul>
+                <li>本 App 服务按"现状"提供，我们不保证生成内容完全准确、适于特定用途或无条件可用；</li>
+                <li>AI 生成能力依赖云端服务，可能因维护、供应商调整或不可抗力出现中断、延迟或功能变化，我们将尽力提前或及时告知；</li>
+                <li>在法律允许的最大范围内，本 App 不对因使用或无法使用服务导致的间接损失、数据损失或利润损失承担责任。</li>
+            </ul>
+        </section>
+        <section class="card">
+            <h2>8. 服务变更与终止</h2>
+            <p>我们可能不时调整功能、额度与定价，重大调整将提前在 App 内或本页面合理告知。若您严重违反本协议，我们有权终止向您提供服务。您可以随时停止使用本 App；卸载 App 将删除设备本地数据。</p>
+        </section>
+        <section class="card">
+            <h2>9. 知识产权</h2>
+            <p>本 App 的软件、界面、代码与素材的知识产权归开发者所有。您在遵守本协议的前提下，保留您输入的文本以及您生成的音频内容的使用权利。</p>
+        </section>
+        <section class="card">
+            <h2>10. 未成年人</h2>
+            <p>本 App 不面向 13 周岁以下儿童。未成年人应在监护人指导和同意下使用本 App 及任何付费功能。</p>
+        </section>
+        <section class="card">
+            <h2>11. 其他</h2>
+            <p>本协议的订立、履行与解释适用中华人民共和国法律。我们可能不时更新本协议，更新后将在本页面发布并修订生效日期。对本协议有任何疑问，请联系：<a href="mailto:wangyong.xu@icloud.com">wangyong.xu@icloud.com</a></p>
+        </section>
+    </div>
+
+    <hr class="divider">
+
+    <div class="en">
+        <section class="card">
+            <h2>1. The Service</h2>
+            <p>Voice Workshop (the "App") provides generative AI features including text-to-speech, voice cloning, and speech-to-text. All output is automatically generated by AI models and may be inaccurate, incomplete, or different from what you expect. Generated results are for assistance only; please review them yourself before publishing or commercial use.</p>
+        </section>
+        <section class="card">
+            <h2>2. Acceptable Use</h2>
+            <p>You agree to use the App only for lawful purposes and that you hold lawful rights to the text and audio you input. You must not use the App to:</p>
+            <ul>
+                <li>generate or disseminate illegal, infringing, fraudulent, defamatory, or harassing content;</li>
+                <li>impersonate others or create misleading deepfake content;</li>
+                <li>infringe any third party's intellectual property, likeness, voice rights, or other rights.</li>
+            </ul>
+            <p>You are solely responsible for violations of the above, and we may restrict or terminate service for violating accounts.</p>
+        </section>
+        <section class="card">
+            <h2>3. Voice Cloning Authorization</h2>
+            <p>When using voice cloning, you must have valid consent and authorization from the person whose voice is cloned (or their rights holder) and use it only for your own lawful purposes. Cloning public figures' or other people's voices for impersonation or marketing requires explicit prior authorization. We do not review each cloning use case; disputes arising from missing authorization are your responsibility.</p>
+        </section>
+        <section class="card">
+            <h2>4. Membership and Character Quota</h2>
+            <ul>
+                <li>Membership benefits are based on a <b>character quota</b>: each subscription tier grants a per-cycle character allowance that resets when the subscription renews;</li>
+                <li>Separately purchased character packs are consumable allowances added to the same quota pool, deducted by usage, with no expiry;</li>
+                <li>Free users receive a small number of free generations per day;</li>
+                <li>The quota shown in the App prevails. The same Apple Account shares a single quota pool; once depleted, wait for the next cycle, renew, or buy a character pack.</li>
+            </ul>
+        </section>
+        <section class="card">
+            <h2>5. Purchases, Auto-Renewal, and Refunds</h2>
+            <ul>
+                <li>All purchases are processed via Apple In-App Purchase; pricing, billing, and receipts follow App Store rules;</li>
+                <li>Subscriptions auto-renew within 24 hours before the current period ends; manage or cancel anytime in Settings → Apple Account → Subscriptions;</li>
+                <li>Refunds follow Apple's official policy via the App Store "Report a Problem" page (reportaproblem.apple.com).</li>
+            </ul>
+        </section>
+        <section class="card">
+            <h2>6. Apple Account and Restoration</h2>
+            <p>Membership benefits are tied to the Apple Account (formerly Apple ID) used for the purchase. After changing devices, reinstalling, or switching Apple Accounts, sign in with the original Apple Account and tap "Restore Purchases" in Settings to restore benefits.</p>
+            <p>Membership benefits are for the purchaser's personal use only. You may not rent, sell, lend, or publicly share your Apple Account or membership benefits to avoid payment; sharing one quota among multiple people depletes it quickly, and sharing or selling Apple Accounts itself violates Apple's terms and may lead to account suspension.</p>
+        </section>
+        <section class="card">
+            <h2>7. Disclaimers</h2>
+            <ul>
+                <li>The App is provided "as is"; we do not guarantee generated content is fully accurate or fit for a particular purpose, or that the service will be uninterrupted;</li>
+                <li>AI capabilities rely on cloud services and may be interrupted, delayed, or changed due to maintenance, provider adjustments, or force majeure; we will inform you as early as reasonably possible;</li>
+                <li>To the maximum extent permitted by law, the App is not liable for indirect losses, data loss, or loss of profits arising from use of or inability to use the service.</li>
+            </ul>
+        </section>
+        <section class="card">
+            <h2>8. Changes and Termination</h2>
+            <p>We may adjust features, quotas, and pricing from time to time; material changes will be announced in the App or on this page in advance. We may terminate service if you seriously violate this agreement. You may stop using the App at any time; uninstalling removes local data from the device.</p>
+        </section>
+        <section class="card">
+            <h2>9. Intellectual Property</h2>
+            <p>The App's software, interface, code, and assets belong to the developer. Subject to your compliance with this agreement, you retain the rights to use the text you input and the audio you generate.</p>
+        </section>
+        <section class="card">
+            <h2>10. Minors</h2>
+            <p>The App is not directed at children under 13. Minors should use the App and any paid features under a guardian's guidance and consent.</p>
+        </section>
+        <section class="card">
+            <h2>11. Miscellaneous</h2>
+            <p>This agreement is governed by the laws of the People's Republic of China. We may update it from time to time; updates will be published on this page with a revised effective date. Questions: <a href="mailto:wangyong.xu@icloud.com">wangyong.xu@icloud.com</a></p>
+        </section>
+    </div>
+
+    <footer>© 2026 语音工坊 Voice Workshop · <a href="https://aiguanren.github.io/wyvoice-privacy/">隐私政策 Privacy Policy</a></footer>
+</div>
+</body>
+</html>
