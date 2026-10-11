@@ -46,6 +46,10 @@
     .en { display: none; }
     body.show-en .zh { display: none; }
     body.show-en .en { display: block; }
+    .zh-hant { display: none; }
+    body.show-zh-hant .zh { display: none; }
+    body.show-zh-hant .en { display: none; }
+    body.show-zh-hant .zh-hant { display: block; }
     footer { text-align: center; font-size: 12px; opacity: .5; margin-top: 28px; }
     a { color: #d83a5b; }
 </style>
@@ -58,8 +62,9 @@
         <div class="sub">AI 配音 · 声音克隆 · 语音转文字</div>
     </header>
     <div class="langs">
-        <a href="#" class="on" onclick="document.body.classList.remove('show-en');document.querySelectorAll('.langs a')[0].classList.add('on');document.querySelectorAll('.langs a')[1].classList.remove('on');return false;">简体中文</a>
-        <a href="#" onclick="document.body.classList.add('show-en');document.querySelectorAll('.langs a')[1].classList.add('on');document.querySelectorAll('.langs a')[0].classList.remove('on');return false;">English</a>
+        <a href="#" class="on" onclick="setLang('zh');return false;">简体中文</a>
+        <a href="#" onclick="setLang('zh-hant');return false;">繁體中文</a>
+        <a href="#" onclick="setLang('en');return false;">English</a>
     </div>
     <div class="meta">用户协议 · 生效日期 2026-10-11</div>
 
@@ -127,6 +132,73 @@
         <section class="card">
             <h2>11. 其他</h2>
             <p>本协议的订立、履行与解释适用中华人民共和国法律。我们可能不时更新本协议，更新后将在本页面发布并修订生效日期。对本协议有任何疑问，请联系：<a href="mailto:aiguanren@icloud.com">aiguanren@icloud.com</a></p>
+        </section>
+    </div>
+
+    <div class="zh-hant">
+        <section class="card">
+            <h2>1. 服務說明</h2>
+            <p>語音工坊（下稱「本 App」）提供 AI 語音合成、聲音克隆、語音轉文字等生成式 AI 功能。所有輸出均由人工智慧模型自動生成，可能存在不準確、不完整或與預期不符的內容。生成結果僅供輔助用途，用於正式發布、商業用途等重要場景前請您自行核對。</p>
+        </section>
+        <section class="card">
+            <h2>2. 合規使用</h2>
+            <p>您承諾僅在合法目的下使用本 App，並保證對輸入的文字、音訊等內容擁有合法權利。您不得利用本 App：</p>
+            <ul>
+                <li>生成或傳播違法、侵權、詐欺、誹謗或騷擾性內容；</li>
+                <li>冒充他人或生成誤導公眾的深度偽造（Deepfake）內容；</li>
+                <li>侵犯任何第三方的智慧財產權、肖像權、聲音權益或其他人身、財產權利。</li>
+            </ul>
+            <p>因您違反上述約定產生的一切責任由您自行承擔，我們有權對違規帳號採取限制或終止服務等措施。</p>
+        </section>
+        <section class="card">
+            <h2>3. 聲音克隆授權</h2>
+            <p>使用聲音克隆功能時，您須確保已獲得被克隆聲音本人（或其權利人）的有效同意與授權，且僅用於本人合法用途。克隆公眾人物、他人聲音用於冒充、帶貨、行銷等場景，必須事先取得明確授權。我們不對您的克隆用途逐案審查，因授權缺失引發的糾紛與責任由您承擔。</p>
+        </section>
+        <section class="card">
+            <h2>4. 會員與字元額度</h2>
+            <ul>
+                <li>會員權益以<b>字元額度</b>為核心：訂閱檔位對應相應的每週期可用字元額度，額度隨訂閱週期到期自動清零、續期後重新發放；</li>
+                <li>額外購買的字元包為消耗型額度，加入同一額度池，按使用量扣減，不設有效期；</li>
+                <li>免費使用者每天享有少量免費生成次數；</li>
+                <li>額度以本 App 內展示為準。同一 Apple 帳戶共享同一額度池，額度用盡後需等待週期發放、續費或購買字元包。</li>
+            </ul>
+        </section>
+        <section class="card">
+            <h2>5. 購買、自動續費與退款</h2>
+            <ul>
+                <li>所有付費項目均透過 Apple App Store 內購完成，價格、扣費與發票規則以 App Store 展示為準；</li>
+                <li>訂閱為自動續期：在當前週期結束前 24 小時內自動扣費續訂，您可隨時在系統「設定 → Apple 帳戶 → 訂閱項目」中管理或取消；</li>
+                <li>退款按 Apple 官方政策辦理，請透過 App Store 的「回報問題」頁面發起（reportaproblem.apple.com）。</li>
+            </ul>
+        </section>
+        <section class="card">
+            <h2>6. Apple 帳戶與權益恢復</h2>
+            <p>會員權益與購買時使用的 Apple 帳戶（舊稱 Apple ID）綁定。更換裝置、重新安裝或更換 Apple 帳戶後，登入原 Apple 帳戶並在設定頁點擊「恢復購買」即可恢復權益。</p>
+            <p>會員權益僅限購買者本人使用。您不得將 Apple 帳戶、會員權益出租、出售、出借或以任何方式向公眾共享以規避付費；同一額度的多人共享會導致額度迅速耗盡，且共享、買賣 Apple 帳戶本身違反 Apple 服務條款並可能導致帳號被封禁。</p>
+        </section>
+        <section class="card">
+            <h2>7. 免責聲明</h2>
+            <ul>
+                <li>本 App 服務按「現狀」提供，我們不保證生成內容完全準確、適於特定用途或無條件可用；</li>
+                <li>AI 生成能力依賴雲端服務，可能因維護、供應商調整或不可抗力出現中斷、延遲或功能變化，我們將盡力提前或及時告知；</li>
+                <li>在法律允許的最大範圍內，本 App 不對因使用或無法使用服務導致的間接損失、資料損失或利潤損失承擔責任。</li>
+            </ul>
+        </section>
+        <section class="card">
+            <h2>8. 服務變更與終止</h2>
+            <p>我們可能不時調整功能、額度與定價，重大調整將提前在 App 內或本頁面合理告知。若您嚴重違反本協議，我們有權終止向您提供服務。您可以隨時停止使用本 App；解除安裝 App 將刪除裝置本地資料。</p>
+        </section>
+        <section class="card">
+            <h2>9. 智慧財產權</h2>
+            <p>本 App 的軟體、介面、程式碼與素材的智慧財產權歸開發者所有。您在遵守本協議的前提下，保留您輸入的文字以及您生成的音檔內容的使用權利。</p>
+        </section>
+        <section class="card">
+            <h2>10. 未成年人</h2>
+            <p>本 App 不面向 13 歲以下兒童。未成年人應在監護人指導和同意下使用本 App 及任何付費功能。</p>
+        </section>
+        <section class="card">
+            <h2>11. 其他</h2>
+            <p>本協議的訂立、履行與解釋適用中華人民共和國法律。我們可能不時更新本協議，更新後將在本頁面發布並修訂生效日期。對本協議有任何疑問，請聯絡：<a href="mailto:aiguanren@icloud.com">aiguanren@icloud.com</a></p>
         </section>
     </div>
 
@@ -201,5 +273,24 @@
 
     <footer>© 2026 语音工坊 Voice Workshop · <a href="https://aiguanren.github.io/wyvoice-privacy/">隐私政策 Privacy Policy</a></footer>
 </div>
+<script>
+function setLang(lang){
+    var b=document.body;
+    b.classList.remove('show-en');b.classList.remove('show-zh-hant');
+    if(lang==='en'){b.classList.add('show-en');}
+    if(lang==='zh-hant'){b.classList.add('show-zh-hant');}
+    var links=document.querySelectorAll('.langs a');
+    links[0].classList.toggle('on',lang==='zh');
+    links[1].classList.toggle('on',lang==='zh-hant');
+    links[2].classList.toggle('on',lang==='en');
+}
+(function(){
+    var m=location.search.match(/[?&]lang=([^&]+)/);
+    if(!m)return;
+    var lang=decodeURIComponent(m[1]);
+    if(lang==='zh-Hant'||lang==='zh-HK'||lang==='zh-MO'){setLang('zh-hant');}
+    else if(lang.indexOf('zh')!==0){setLang('en');}
+})();
+</script>
 </body>
 </html>
